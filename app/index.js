@@ -50,6 +50,7 @@ componentWillUnmount(){
 AppState.removeEventListener('change', this.handleAppStateChange);
 }
 
+
 handleAppStateChange(appState) {
   if (appState === 'background') {
     let date = new Date(Date.now() + (5 * 1000));
