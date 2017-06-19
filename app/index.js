@@ -53,9 +53,6 @@ AppState.removeEventListener('change', this.handleAppStateChange);
 handleAppStateChange(appState) {
   if (appState === 'background') {
     let date = new Date(Date.now() + (5 * 1000));
-      // PushNotification.localNotificationSchedule({
-      // message: "My Notification Message", date,// (required)
-      // });
       PushNotification.localNotificationSchedule({
       message: "My Scheduled Notification Message", // (required)
       date: new Date().now, // in 60 secs
